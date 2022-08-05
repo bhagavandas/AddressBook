@@ -7,6 +7,7 @@ public class AddressBookMain {
 		System.out.println("Welcome to Address Book Program");
 
 		String[][] addressbooks = new String[10][8];
+		ContactPerson obj = new ContactPerson();
 
 		addressbooks[0][0] = "First Name";
 		addressbooks[0][1] = "Last Name";
@@ -44,5 +45,7 @@ public class AddressBookMain {
 				+ addressbooks[2][3] + "\n\t" + addressbooks[2][4] + ", " + addressbooks[2][5] + "  Ph.No: "
 				+ addressbooks[2][6] + "\n\t" + addressbooks[2][7]);
 
+		obj.addNewContact(null, null, null, null, null, 0, 0, null);
+		
 	}
 }
